@@ -1,4 +1,4 @@
-﻿using AIPProvider.src.SensorFusion;
+﻿using AIPProvider.src.SituationData;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityGERunner;
 
-namespace AIPProvider.src.DataCenter.TrackFiles
+namespace AIPProvider.src.SituationData.TrackFiles
 {
 
     // carries data needed for conversion between 

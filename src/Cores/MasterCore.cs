@@ -1,4 +1,5 @@
-﻿using AIPProvider.src.DataCenter.Tools;
+﻿using AIPProvider.src.SituationData;
+using AIPProvider.src.SituationData.Tools;
 using AIPProvider.src.Utilities;
 using System;
 using System.Collections.Generic;
@@ -42,10 +43,14 @@ namespace AIPProvider.src.Cores
     {
         private Utils utils;
         private GroundUtils gUtils;
-        SetupInfo simInfo;
-        SimData simData;
+        private SetupInfo simInfo;
+        private SimData simData;
 
-        CoreDefault coreDefault;
+        private SimActions simActions;
+
+        private CoreDefault coreDefault;
+
+        private DataCenter dataCenter;
 
         public MasterCore(Utils utilities, GroundUtils groundUtils) 
         {
@@ -70,13 +75,36 @@ namespace AIPProvider.src.Cores
         public InboundState Update(OutboundState state)
         {
             simData = new SimData(state);
+            simActions = new SimActions();
 
+            return simActions.Convert();
+        }
 
-            return new InboundState
-            {
-                pyr = new NetVector { x = 0, y = 0, z = 0 },
-                throttle = 100,
-            };
+        private void PhaseScan()
+        {
+            // run all the passive updates of the DataCenter
+        }
+        private void PhaseNetwork()
+        {
+            // potential feature:
+            // send and recieve commands from a websocket
+        }
+
+        private void PhaseProtocol()
+        {
+
+        }
+        private void PhaseCombat()
+        {
+
+        }
+        private void PhaseNavigation()
+        {
+
+        }
+        private void PhaseDefence()
+        {
+
         }
     }
 }

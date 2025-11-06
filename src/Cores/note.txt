@@ -1,0 +1,59 @@
+
+state machine states:
+
+- freeroam cruising
+- BVR engagement (BVR)
+- rat to target (WVR)
+- merge
+- dogfight (1v1) (BFM)
+- dogfight (1vX)
+- escape
+- RTB
+- (remote controlled (future option))
+
+Each protocol should corresond to a Core the MasterCore could decide to employ
+
+
+----------------------------------------------
+> freeroam cruising
+
+looking for a target
+
+----------------------------------------------
+> BVR engagement
+
+unbalanced enemy count
+too dangerous to get closer
+
+----------------------------------------------
+> rat to target (WVR)
+
+commited to merge
+trying to get closer to a specific target
+defensive in nature (sneaking and terrain)
+
+----------------------------------------------
+> merge
+
+merging process
+aggressive
+needs precise maneuvering and speed control
+
+----------------------------------------------
+> dogfight (BFM)
+
+complex BFM state machine in itself
+strong aggro factor and use the gun
+
+----------------------------------------------
+> escape
+
+serious threat present in WVR
+safer to run than engage
+defensive manouvers
+
+----------------------------------------------
+> RTB
+
+out of ammor/fuel
+no imminent threat, just RTB

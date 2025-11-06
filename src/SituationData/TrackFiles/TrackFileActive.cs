@@ -1,4 +1,4 @@
-﻿using AIPProvider.src.SensorFusion;
+﻿using AIPProvider.src.SituationData;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using UnityGERunner;
 using UnityGERunner.UnityApplication;
 
-namespace AIPProvider.src.DataCenter.TrackFiles
+namespace AIPProvider.src.SituationData.TrackFiles
 {
     internal enum ActiveTrackState
     {
