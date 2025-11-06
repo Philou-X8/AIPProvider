@@ -1,0 +1,46 @@
+
+waypoint
+checkpoint
+destination
+
+
+transform ([Position, Rotation], absolute coordinate)
+
+rotation (quat)
+orientation (vect, nose direction)
+lift (vect, up vector equivalent to the planes lift vector)
+angular
+
+position, pos (vect)
+coords ()
+point (vect)
+origin (vect, starting point of a Direction vector) (usually refer to self)
+destination (vect, ending point of a Direction vector???)
+
+direction (vect, absolute, arrow from point A to B)
+offset
+bearing
+distance (float)
+orientation (vect, could use Orientation to express a relative direction??)
+
+velocity (vect)
+momentum
+speed
+heading
+closure
+
+
+Track ([id, Transform, Velocity, Angular], full data track file)
+Track ([id, Position, Lift, Velocity, Angular], full data track file alternative)
+TrackDirection ([id, Direction, Distance, Velocity],   )
+
+
+controller
+manager
+collector
+spotter
+
+
+trail
+path
+route
